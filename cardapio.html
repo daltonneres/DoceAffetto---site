@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cardápio | Doce Affetto | Doces que Encantam</title>
+    <link rel="icon" type="image/png" href="favicon.png" title="Doce Affetto">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="menu-cardapio">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#bolos">Bolos</a></li>
+            <li><a href="#doces">Doces</a></li>
+            <li><a href="#sobremesas-especiais">Sobremesas Especiais</a></li>
+            <li><a href="#salgados-doces">Salgados Doces</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><button id="btn-ver-carrinho">Ver Carrinho (<span id="contador-itens">0</span>)</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Bolos -->
+    <section id="bolos">
+        <h2>Nossos Bolos</h2>
+        <ul class="lista-lanches">
+            <li class="lanche-item">
+                <h3>Bolo de Cenoura</h3>
+                <p>Clássico bolo de cenoura fofinho, com cobertura de chocolate</p>
+                <span class="preco">R$ 25,00</span>
+                <button class="btn-adicionar" data-produto="Bolo de Cenoura" data-preco="25.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Bolo de Coco</h3>
+                <p>Bolo macio com sabor de coco e cobertura cremosa</p>
+                <span class="preco">R$ 27,00</span>
+                <button class="btn-adicionar" data-produto="Bolo de Coco" data-preco="27.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Bolo de Fubá</h3>
+                <p>Tradicional bolo de fubá com toque de erva-doce</p>
+                <span class="preco">R$ 22,00</span>
+                <button class="btn-adicionar" data-produto="Bolo de Fubá" data-preco="22.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Bolinho Recheado</h3>
+                <p>Bolos recheados com brigadeiro, beijinho ou doce de leite</p>
+                <span class="preco">R$ 30,00</span>
+                <button class="btn-adicionar" data-produto="Bolinho Recheado" data-preco="30.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Bolo Vulcão</h3>
+                <p>Bolo de chocolate com recheio derretido no centro</p>
+                <span class="preco">R$ 35,00</span>
+                <button class="btn-adicionar" data-produto="Bolo Vulcão" data-preco="35.00">Adicionar</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Doces -->
+    <section id="doces">
+        <h2>Doces Variados</h2>
+        <ul class="lista-lanches">
+            <li class="lanche-item">
+                <h3>Donuts</h3>
+                <p>Deliciosos donuts recheados ou cobertos com chocolate e granulado</p>
+                <span class="preco">R$ 8,00</span>
+                <button class="btn-adicionar" data-produto="Donuts" data-preco="8.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Brownie</h3>
+                <p>Brownie de chocolate com textura macia e intensa</p>
+                <span class="preco">R$ 12,00</span>
+                <button class="btn-adicionar" data-produto="Brownie" data-preco="12.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Churros</h3>
+                <p>Churros recheados com doce de leite ou chocolate</p>
+                <span class="preco">R$ 10,00</span>
+                <button class="btn-adicionar" data-produto="Churros" data-preco="10.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Cone Trufado</h3>
+                <p>Cone recheado com chocolate trufado e cobertura especial</p>
+                <span class="preco">R$ 15,00</span>
+                <button class="btn-adicionar" data-produto="Cone Trufado" data-preco="15.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Biscitinho de Goiaba</h3>
+                <p>Biscoitos recheados com goiabada</p>
+                <span class="preco">R$ 6,00</span>
+                <button class="btn-adicionar" data-produto="Biscitinho de Goiaba" data-preco="6.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Pão Doce</h3>
+                <p>Pães doces variados, fofinhos e fresquinhos</p>
+                <span class="preco">R$ 7,00</span>
+                <button class="btn-adicionar" data-produto="Pão Doce" data-preco="7.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Cuca</h3>
+                <p>Deliciosa cuca caseira com farofa crocante</p>
+                <span class="preco">R$ 12,00</span>
+                <button class="btn-adicionar" data-produto="Cuca" data-preco="12.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Cueca Virada</h3>
+                <p>Bolo tradicional com camadas de doce de leite e cobertura de coco</p>
+                <span class="preco">R$ 20,00</span>
+                <button class="btn-adicionar" data-produto="Cueca Virada" data-preco="20.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Cookie</h3>
+                <p>Cookie de chocolate, macio por dentro e crocante por fora</p>
+                <span class="preco">R$ 6,00</span>
+                <button class="btn-adicionar" data-produto="Cookie" data-preco="6.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Cupcake</h3>
+                <p>Cupcake decorado, com cobertura de buttercream ou ganache</p>
+                <span class="preco">R$ 8,00</span>
+                <button class="btn-adicionar" data-produto="Cupcake" data-preco="8.00">Adicionar</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sobremesas Especiais -->
+    <section id="sobremesas-especiais">
+        <h2>Sobremesas Especiais</h2>
+        <ul class="lista-lanches">
+            <li class="lanche-item">
+                <h3>Bolo Recheado</h3>
+                <p>Bolos recheados com brigadeiro, beijinho, doce de leite ou frutas</p>
+                <span class="preco">R$ 35,00</span>
+                <button class="btn-adicionar" data-produto="Bolo Recheado" data-preco="35.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Bolo de Festa</h3>
+                <p>Bolos decorados para aniversários e celebrações</p>
+                <span class="preco">R$ 45,00</span>
+                <button class="btn-adicionar" data-produto="Bolo de Festa" data-preco="45.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Bolo de Chocolate Gourmet</h3>
+                <p>Bolo com chocolate premium, cobertura cremosa e decoração especial</p>
+                <span class="preco">R$ 50,00</span>
+                <button class="btn-adicionar" data-produto="Bolo de Chocolate Gourmet" data-preco="50.00">Adicionar</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Salgados Doces -->
+    <section id="salgados-doces">
+        <h2>Salgados Doces</h2>
+        <ul class="lista-lanches">
+            <li class="lanche-item">
+                <h3>Churros Recheado</h3>
+                <p>Churros doce com recheio de doce de leite ou chocolate</p>
+                <span class="preco">R$ 10,00</span>
+                <button class="btn-adicionar" data-produto="Churros Recheado" data-preco="10.00">Adicionar</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Bebidas -->
+    <section id="bebidas">
+        <h2>Bebidas</h2>
+        <ul class="lista-lanches">
+            <li class="lanche-item">
+                <h3>Suco Natural</h3>
+                <p>Suco de frutas fresco e sem conservantes</p>
+                <span class="preco">R$ 8,00</span>
+                <button class="btn-adicionar" data-produto="Suco Natural" data-preco="8.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Refrigerante 350ml</h3>
+                <p>Refrescante e geladinho</p>
+                <span class="preco">R$ 7,00</span>
+                <button class="btn-adicionar" data-produto="Refrigerante 350ml" data-preco="7.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Água 500ml</h3>
+                <p>Água mineral sem gás ou com gás</p>
+                <span class="preco">R$ 4,00</span>
+                <button class="btn-adicionar" data-produto="Água 500ml" data-preco="4.00">Adicionar</button>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Promoções -->
+    <section id="promocoes">
+        <h2>Promoções do Dia</h2>
+        <p class="data-promo">
+            Promoções válidas apenas durante nosso horário de funcionamento — <span id="data-atual"></span>
+        </p>
+        <ul class="lista-lanches">
+            <li class="lanche-item">
+                <h3>Combo Donuts + Brownie</h3>
+                <p>Leve 1 Donuts + 1 Brownie com 10% de desconto</p>
+                <span class="preco">R$ 18,00</span>
+                <button class="btn-adicionar" data-produto="Combo Donuts + Brownie" data-preco="18.00">Adicionar</button>
+            </li>
+            <li class="lanche-item">
+                <h3>Combo Bolo + Suco</h3>
+                <p>Bolo de sua escolha + Suco Natural com desconto especial</p>
+                <span class="preco">R$ 30,00</span>
+                <button class="btn-adicionar" data-produto="Combo Bolo + Suco" data-preco="30.00">Adicionar</button>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        // Exibe a data atual
+        const dataAtualEl = document.getElementById('data-atual');
+        const hoje = new Date();
+        const opcoes = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        dataAtualEl.textContent = hoje.toLocaleDateString('pt-BR', opcoes);
+    </script>
+</main>
+
+<!-- Modal Carrinho -->
+<div id="modal-carrinho" class="modal-carrinho hidden">
+    <div class="modal-content">
+        <h2>Seu Carrinho</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total-carrinho">Total: R$ 0,00</p>
+
+        <div class="opcoes-pedido">
+            <label for="tipo-entrega">Tipo de Pedido:</label><br />
+            <select id="tipo-entrega" name="tipo-entrega">
+                <option value="Entrega">Entrega (+R$ 8,00)</option>
+                <option value="Retirada">Retirada</option>
+            </select>
+
+            <br /><br />
+
+            <div id="campo-endereco" style="display: none;">
+                <label for="endereco">Endereço de Entrega:</label><br />
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade" />
+            </div>
+
+            <br />
+
+            <label for="forma-pagamento">Forma de Pagamento:</label><br />
+            <select id="forma-pagamento" name="forma-pagamento">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Pix">Pix</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+            </select>
+
+            <br /><br />
+
+            <label for="troco">Precisa de troco? Se sim, informe o valor:</label><br />
+            <input type="text" id="troco" name="troco" placeholder="Ex: 50,00" />
+        </div>
+
+        <button id="btn-enviar-whatsapp">Enviar Pedido via WhatsApp</button>
+        <button id="btn-limpar-carrinho">Limpar Carrinho</button>
+        <button id="btn-fechar-carrinho">Fechar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+    &copy; 2025 Doce Affetto - Doces que encantam todos os momentos - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
