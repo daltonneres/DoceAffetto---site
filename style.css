@@ -39,18 +39,6 @@ header p {
     /* espaço maior para não grudar com a próxima seção */
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
-    header p {
-        font-size: 1rem;
-    }
-    .logo img {
-        width: 90px; /* reduz a logo em telas menores */
-        margin-bottom: 20px;
-    }
-}
 
 section#cardapio p {
     font-size: 1.1rem;
@@ -218,21 +206,6 @@ section h2 {
   line-height: 1.4;
 }
 
-@media (max-width: 600px) {
-    .lanche-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .preco {
-        margin-right: 0;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-    .btn-adicionar {
-        width: 100%;
-        text-align: center;
-    }
-}
 .preco {
   font-weight: 700;
   font-size: 1.3rem;
@@ -564,7 +537,29 @@ section#sorvetes .btn-ver-cardapio:hover {
   background-color: #e6b800;
 }
 
+/* ============================= */
+/* Media Queries - Tablets e Celulares */
+/* ============================= */
+
+/* Tablets (≤ 768px) */
 @media (max-width: 768px) {
+
+    /* Cabeçalho */
+    header {
+        padding: 40px 15px 30px;
+    }
+    .logo img {
+        width: 90px;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+
+    /* Menu */
     .menu-cardapio nav ul {
         flex-direction: column;
         gap: 15px;
@@ -573,36 +568,116 @@ section#sorvetes .btn-ver-cardapio:hover {
     .menu-cardapio nav ul li button {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 480px) {
+    /* Seções */
+    section {
+        padding: 40px 15px;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
+
+    /* Lista de lanches */
+    .lista-lanches {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .lanche-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .preco {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .btn-adicionar {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Botões gerais */
     .btn-ver-cardapio,
     .btn-adicionar {
-        padding: 10px 16px;
-        font-size: 0.9rem;
+        padding: 12px 20px;
+        font-size: 1rem;
     }
-}
 
-@media (max-width: 480px) {
+    /* Modais */
     .modal-content {
-        padding: 20px;
         width: 95%;
+        padding: 20px;
     }
-    #btn-enviar-whatsapp, #btn-fechar-carrinho, #btn-limpar-carrinho {
+    #btn-enviar-whatsapp,
+    #btn-fechar-carrinho,
+    #btn-limpar-carrinho,
+    #btn-adicionar-carrinho-pastel,
+    #btn-fechar-sabores {
         width: 100%;
         margin: 10px 0;
     }
 }
 
+/* Celulares (≤ 480px) */
 @media (max-width: 480px) {
+
+    /* Cabeçalho */
+    header {
+        padding: 30px 10px 20px;
+    }
+    .logo img {
+        width: 70px;
+        margin-bottom: 15px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header p {
+        font-size: 0.9rem;
+    }
+
+    /* Seções */
+    section h2 {
+        font-size: 1.6rem;
+    }
     section#lanches,
     section#pasteis,
     section#sorvetes,
     #promocoes {
+        max-width: 95%;
+        margin: 20px auto;
         padding: 15px;
-        margin: 15px auto;
     }
-    section h2 {
-        font-size: 2rem;
+
+    /* Lista de lanches */
+    .lanche-item h3 {
+        font-size: 1.2rem;
+    }
+    .lanche-item p {
+        font-size: 1rem;
+    }
+    .preco {
+        font-size: 1.1rem;
+    }
+
+    /* Botões */
+    .btn-ver-cardapio,
+    .btn-adicionar {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Promoções */
+    #promocoes h2 {
+        font-size: 1.8rem;
+    }
+    .lista-promocoes {
+        font-size: 1rem;
+    }
+
+    /* Modais */
+    #modal-sabores .modal-content {
+        max-width: 95%;
+        padding: 15px;
     }
 }
